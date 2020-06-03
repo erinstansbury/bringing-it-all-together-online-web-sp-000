@@ -47,7 +47,10 @@ class Dog
     self
   end
   
-  def 
+  def self.create(name:, breed:)
+    dog = 
+    dog = 
+    dog
   
   def self.find_by_name(name)
     sql = "SELECT * FROM dogs WHERE name = ?"
