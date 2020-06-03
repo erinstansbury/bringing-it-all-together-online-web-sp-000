@@ -49,7 +49,7 @@ class Dog
   
   def self.create(name:, breed:)
     dog = 
-    dog = 
+    dog.save 
     dog
   
   def self.find_by_name(name)
