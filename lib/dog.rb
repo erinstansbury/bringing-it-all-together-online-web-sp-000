@@ -47,10 +47,10 @@ class Dog
     self
   end
   
-  def self.create(name:, breed:)
-    dog = Dog.new(name, breed)
-    dog.save 
-    dog
+  def self.create(attr_hash)
+    dog = Dog.new(attr_hash)
+    attr_hash.each {|key, value| dog.send(("#{key}="), value)}
+    dog.save
   end
   
   def self.find_by_name(name)
